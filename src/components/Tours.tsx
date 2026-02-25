@@ -75,6 +75,7 @@ export const Tours: React.FC = () => {
                   src={tour.image_url || 'https://images.pexels.com/photos/1796505/pexels-photo-1796505.jpeg'}
                   alt={tour.translation?.title || tour.slug}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full font-bold shadow-lg">
                   {t('from')} {convertPrice(tour.base_price_gbp, currency)}

@@ -101,6 +101,7 @@ export const Blog: React.FC = () => {
                   src={post.image}
                   alt={post.title[currentLanguage as keyof typeof post.title]}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {post.category}

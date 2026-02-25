@@ -71,6 +71,7 @@ export const Guides: React.FC = () => {
                   src={guide.photo_url || 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg'}
                   alt={guide.translation?.name || guide.slug}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-bold shadow-lg flex items-center">
                   <Star className="w-4 h-4 fill-current mr-1" />
